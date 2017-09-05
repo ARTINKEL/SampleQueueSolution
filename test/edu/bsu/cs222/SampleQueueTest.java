@@ -10,4 +10,10 @@ public class SampleQueueTest {
         SampleQueue queue = new SampleQueue();
         Assert.assertTrue(queue.isEmpty());
     }
+
+    @Test
+    public void testSize() {
+        SampleQueue queue = new SampleQueue();
+        Assert.assertEquals(0, queue.size());
+    }
 }
