@@ -16,4 +16,11 @@ public class SampleQueueTest {
         SampleQueue queue = new SampleQueue();
         Assert.assertEquals(0, queue.size());
     }
+
+    @Test
+    public void testIsEmpty_withOneElementAdded() {
+        SampleQueue queue = new SampleQueue();
+        queue.add("x");
+        Assert.assertFalse(queue.isEmpty());
+    }
 }

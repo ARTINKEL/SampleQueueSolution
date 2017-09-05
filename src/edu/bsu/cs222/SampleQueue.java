@@ -1,12 +1,20 @@
 package edu.bsu.cs222;
 
+import java.util.LinkedList;
+
 public class SampleQueue {
 
+    LinkedList<String> list = new LinkedList<>();
+
     public boolean isEmpty() {
-        return true;
+        return list.isEmpty();
     }
 
     public int size() {
-        return 0;
+        return list.size();
+    }
+
+    public void add(String x) {
+        list.add(x);
     }
 }
